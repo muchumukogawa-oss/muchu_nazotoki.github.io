@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>game-秘密結社Mからの挑戦状</title>
     <style>
-      body {
+      .whole {
         display: flex;
         width: 390px;
         height: 844px;
@@ -13,9 +13,33 @@
         flex-direction: column;
         align-items: center;
         gap: 34px;
-        background: url(back.png) 100px 100px repeat;
+      }
+      .img {
+        display: flex;
+        width: 354px;
+        height: 318px;
+        padding: 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+      .nanido {
+        display: flex;
+        width: 167px;
+        padding: 6px 14px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
       }
     </style>
   </head>
-  <body></body>
+  <body style="background: url(back.png) 100px 100px repeat">
+    <div class="whole">
+      <img src="how-to.png" class="img" />
+      <img src="hard.png" alt="むずかしい" class="nanido" />
+      <img src="easy.png" alt="かんたん" class="nanido" />
+    </div>
+  </body>
 </html>
