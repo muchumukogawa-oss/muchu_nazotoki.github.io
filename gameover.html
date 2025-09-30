@@ -3,118 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .whole {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 153px;
+        padding-bottom: 121px;
+      }
+      p {
+        color: #fff;
+        font-family: 'Zen Kaku Gothic Antique';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 180%; /* 43.2px */
+        text-align: center;
+      }
+    </style>
     <title>gameover-秘密結社Mからの挑戦状</title>
   </head>
-  <body>
-    <div
-      style="
-        width: 100%;
-        height: 100%;
-        position: relative;
-        overflow: hidden;
-        background-image: url(https://placehold.co/390x844);
-      "
-    >
-      <div
-        style="
-          width: 390px;
-          height: 258px;
-          left: -1px;
-          top: 139px;
-          position: absolute;
-          text-align: center;
-          color: #6a62f3;
-          font-size: 100px;
-          font-family: Zen Kaku Gothic Antique;
-          font-weight: 900;
-          line-height: 100px;
-          word-wrap: break-word;
-        "
-      >
-        GAME<br />OVER
-      </div>
-      <div
-        style="
-          width: 390px;
-          height: 258px;
-          left: -9px;
-          top: 130px;
-          position: absolute;
-          text-align: center;
-          color: white;
-          font-size: 100px;
-          font-family: Zen Kaku Gothic Antique;
-          font-weight: 900;
-          line-height: 100px;
-          word-wrap: break-word;
-        "
-      >
-        GAME<br />OVER
-      </div>
-      <div
-        style="
-          left: 42px;
-          top: 438px;
-          position: absolute;
-          color: white;
-          font-size: 24px;
-          font-family: Zen Kaku Gothic Antique;
-          font-weight: 400;
-          line-height: 38.4px;
-          word-wrap: break-word;
-        "
-      >
-        挑戦してくれてありがとう！
-      </div>
-      <div
-        style="
-          left: 30px;
-          top: 476px;
-          position: absolute;
-          color: white;
-          font-size: 24px;
-          font-family: Zen Kaku Gothic Antique;
-          font-weight: 400;
-          line-height: 38.4px;
-          word-wrap: break-word;
-        "
-      >
-        あきらめるのはまだはやいぞ！
-      </div>
-      <div
-        data-show-icon="off"
-        data-status="default"
-        style="
-          width: 167px;
-          height: 69px;
-          padding-left: 14px;
-          padding-right: 14px;
-          padding-top: 6px;
-          padding-bottom: 6px;
-          left: 111px;
-          top: 592px;
-          position: absolute;
-          overflow: hidden;
-          border-radius: 4px;
-          justify-content: center;
-          align-items: center;
-          gap: 10px;
-          display: inline-flex;
-        "
-      >
-        <div
-          style="
-            color: white;
-            font-size: 26px;
-            font-family: Zen Kaku Gothic Antique;
-            font-weight: 400;
-            line-height: 41.6px;
-            word-wrap: break-word;
-          "
-        >
-          リベンジする
-        </div>
-      </div>
+  <body style="background: url(img/back.png) 100px 100px repeat">
+    <div class="whole">
+      <img src="img/gameover.png" style="width: 390px" />
+      <p style="padding-top: 106px; padding-bottom: 102px">
+        挑戦してくれてありがとう！<br />あきらめるのはまだはやいぞ！
+      </p>
+      <a href="game.html">
+        <img src="img/revenge.png" style="width: 200px" />
+      </a>
     </div>
   </body>
 </html>
