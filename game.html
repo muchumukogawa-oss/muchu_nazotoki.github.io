@@ -62,6 +62,13 @@
         margin: 10px;
         cursor: pointer;
       }
+            .button-row {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* ボタンの間隔 */
+        flex-wrap: nowrap;
+        margin-top: 76px;
+      }
 
       .quiz-container {
         position: relative;
@@ -109,7 +116,7 @@
       <p>選択した難易度</p>
       <img src="hard.png" alt="難易度" style="width: 150px" />
       <p style="font-size: 24px">この難易度で始める？</p>
-      <div style="margin-top: 76px">
+      <div class="button-row">
         <img src="modoru.png" alt="戻る" class="button" />
         <img src="start.png" alt="開始" class="button" />
       </div>
@@ -119,11 +126,12 @@
       <p>えらんだむずかしさ</p>
       <img src="easy.png" alt="難易度" style="width: 150px" />
       <p style="font-size: 24px">これではじめる？</p>
-      <div>
+      <div class="button-row">
         <img src="modoru.png" alt="戻る" class="button" />
         <img src="start.png" alt="開始" class="button" />
       </div>
     </div>
+
 
     <!-- 画面③：問題画面 -->
     <div class="whole3" id="screen3">
