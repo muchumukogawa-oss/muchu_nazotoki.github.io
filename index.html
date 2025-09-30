@@ -7,23 +7,22 @@
     <style>
       .whole {
         display: flex;
-        width: 390px;
-        padding: 63px 6px 183.455px 6px;
         flex-direction: column;
-        align-items: center;
-        gap: 104px;
-        background: url(back.png) 100px 100px repeat;
+        justify-content: center; /* 縦方向中央 */
+        align-items: center; /* 横方向中央 */
+        gap: 40px;
+        min-height: 100vh; /* 画面の高さに広げる */
+        width: 100%; /* 横幅も画面いっぱい */
       }
       .titleimg {
         width: 378px;
         height: 378px;
         aspect-ratio: 1/1;
-        background: url(title.png) cover;
+        object-fit: contain;
       }
     </style>
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
   </head>
-  <body>
+  <body style="background: url(back.png) 100px 100px repeat">
     <div class="whole">
       <img src="title.png" alt="タイトルロゴ" class="titleimg" />
       <a href="RiyouKiyaku.html"><img src="start.png" alt="スタート" /></a>
