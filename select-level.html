@@ -4,6 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .whole {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 90px 0px 111px 0px;
+        gap: 40px;
+
+        color: #fff;
+        font-family: 'Zen Kaku Gothic Antique';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+      }
+      .howto {
+        display: flex;
+        width: 354px;
+        height: 318px;
+        padding: 16px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        flex-shrink: 0;
+      }
+      .nanido {
+        width: 167px;
+        cursor: pointer;
+        display: block;
+      }
+    </style>
   </head>
-  <body></body>
+  <body style="background: url(img/back.png) 100px 100px repeat">
+    <!-- 画面①：遊び方 -->
+    <div class="whole">
+      <img src="img/how-to.png" alt="遊び方" style="width: 338px" />
+      <img src="img/hard.png" alt="むずかしい" class="nanido" />
+      <img src="img/easy.png" alt="かんたん" class="nanido" />
+      <p>※小学生以下のみご利用できます</p>
+    </div>
+  </body>
 </html>
