@@ -3,7 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>難易度確認-秘密結社Mからの挑戦状</title>
+    <style>
+      .whole {
+        display: flex;
+        padding: 129px 17px 204px 18px;
+        flex-direction: column;
+        align-items: center;
+        gap: 76px;
+
+        color: #fff;
+        font-family: 'Zen Kaku Gothic Antique';
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 41.6px */
+      }
+      .button {
+        width: 150px;
+        margin: 10px;
+        cursor: pointer;
+      }
+      .note {
+        color: #fff;
+        text-align: center;
+        font-family: 'Zen Kaku Gothic Antique';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%; /* 25.6px */
+      }
+    </style>
   </head>
-  <body></body>
+  <body style="background: url('img/back.png') repeat">
+    <div class="whole">
+      <p>えらんだむずかしさ</p>
+      <img src="img/easy.png" alt="難易度" style="width: 150px" />
+      <p style="font-size: 24px">これではじめる？</p>
+      <div class="button-row">
+        <img src="img/modoru.png" alt="戻る" class="button" />
+        <img src="img/start.png" alt="開始" class="button" />
+        <p class="note">※小学生以下のみご利用できます</p>
+      </div>
+    </div>
+  </body>
 </html>
