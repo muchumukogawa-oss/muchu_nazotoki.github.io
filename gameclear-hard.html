@@ -22,6 +22,11 @@
         line-height: 180%; /* 43.2px */
         text-align: center;
       }
+      #clearTime {
+        font-size: 20px;
+        color: #ffeb3b; /* 黄色 */
+        margin-top: 20px;
+      }
     </style>
     <title>gameclear-秘密結社Mからの挑戦状</title>
   </head>
@@ -29,10 +34,23 @@
     <div class="whole">
       <img src="img/gameclear.png" style="width: 390px" />
       <p style="padding-bottom: 102px">この画面を<br />係の人に見せてね！</p>
+      <!-- クリア日時を表示する要素 -->
+      <p id="clearTime"></p>
       <p style="font-size: 20px">回答は後日Instagramで公開！</p>
       <a href="https://www.instagram.com/muchu_mukogawa/" target="_blank">
         <img src="img/Instagram.png" style="width: 248px" />
       </a>
     </div>
+    <!-- ▼ 保存した日時を表示 -->
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const clearTime = localStorage.getItem('clearTime');
+        if (clearTime) {
+          document.getElementById('clearTime').textContent = 'クリア日時：' + clearTime;
+        } else {
+          document.getElementById('clearTime').textContent = 'クリア日時：不明';
+        }
+      });
+    </script>
   </body>
 </html>

@@ -97,6 +97,17 @@ answerBtn.addEventListener('click', () => {
       } else {
         // 全問正解 → ゲームクリア
         clearInterval(timer);
+        // ▼ クリア日時を記録して保存
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = now.getMonth() + 1;
+        const day = now.getDate();
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const second = now.getSeconds();
+        const formatted = `${year}年${month}月${day}日 ${hour}時${minute}分${second}秒`;
+
+        localStorage.setItem('clearTime', formatted);
         window.location.href = 'gameclear-hard.html';
       }
     }, 1000);
