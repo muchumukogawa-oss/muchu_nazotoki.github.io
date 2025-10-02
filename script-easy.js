@@ -66,6 +66,15 @@ answerBtn.addEventListener('click', () => {
       } else {
         // 全問正解 → ゲームクリア
         clearInterval(timer);
+        // ▼ クリア日時を記録して保存
+        const now = new Date();
+        const month = now.getMonth() + 1;
+        const day = now.getDate();
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const formatted = `${month}がつ${day}にち ${hour}じ${minute}ふん`;
+
+        localStorage.setItem('clearTime', formatted);
         window.location.href = 'gameclear-easy.html'; // easy用に変更
       }
     }, 1000);

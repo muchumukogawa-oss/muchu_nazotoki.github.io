@@ -22,17 +22,33 @@
         line-height: 180%; /* 43.2px */
         text-align: center;
       }
+      #clearTime {
+        font-size: 20px;
+        color: #ffeb3b; /* 黄色 */
+        margin-top: 20px;
+      }
     </style>
     <title>gameclear-秘密結社Mからの挑戦状</title>
   </head>
   <body style="background: url(img/back.png) 100px 100px repeat">
     <div class="whole">
       <img src="img/gameclear-easy.png" style="width: 390px" />
+      <!-- クリア日時を表示する要素 -->
+      <p id="clearTime"></p>
       <p style="padding-bottom: 102px">このがめんを<br />かかりのひとにみせてね！</p>
       <p style="font-size: 20px">こたえはあとでここからみれるよ</p>
       <a href="https://www.instagram.com/muchu_mukogawa/" target="_blank">
         <img src="img/Instagram.png" style="width: 248px" />
       </a>
     </div>
+    <!-- ▼ 保存した日時を表示 -->
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        const clearTime = localStorage.getItem('clearTime');
+        if (clearTime) {
+          document.getElementById('clearTime').textContent = 'クリアしたじかん：' + clearTime;
+        }
+      });
+    </script>
   </body>
 </html>
