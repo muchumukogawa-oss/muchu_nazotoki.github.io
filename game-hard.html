@@ -56,7 +56,17 @@
         align-items: center;
         flex-shrink: 0;
       }
+      #timer {
+        position: absolute;
+        top: -70px;
+        right: 20px;
+        color: #000000;
+        font-size: 36px;
+        font-family: monospace;
+        font-weight: bold;
+      }
     </style>
+    <script src="script.js" defer></script>
   </head>
   <body style="background: url('img/back.png') repeat">
     <div class="whole">
@@ -64,6 +74,7 @@
         <img src="img/hard_01.png" class="quiz" />
         <img src="img/clock.png" class="clock" />
         <img src="img/maru.png" class="marubatu" />
+        <div id="timer">120</div>
       </div>
       <form><input class="form" placeholder="答えを入力" /></form>
       <p class="note">※回答は漢字/ひらがな/半角数字です</p>
