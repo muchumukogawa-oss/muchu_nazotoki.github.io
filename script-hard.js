@@ -44,7 +44,7 @@ const hardCopy = [...hardProblems]; // 元配列を壊さないようコピー
 const quizSet = [
   pickRandom(hardCopy), // 1問目 hard
   pickRandom([...teacherProblems]), // 2問目 teacher
-  pickRandom(hardCopy) // 3問目 hardkouzou
+  pickRandom(hardCopy) // 3問目 hard
 ];
 
 // 現在の問題番号
