@@ -30,7 +30,7 @@ const teacherProblems = [
   { img: 'img/teacher_06.png', answer: ['Out Of House'] },
   { img: 'img/teacher_07.png', answer: ['クラスター'] },
   { img: 'img/teacher_08.png', answer: ['こうぞうか', '構造化', 'KOUZOUKA'] },
-  { img: 'img/teacher_09.png', answer: ['かわいいだけじゃだめですか？', 'かわいいだけじゃだめですか'] }
+  { img: 'img/teacher_09.png', answer: ['かわいいだけじゃだめですか？'] }
 ];
 
 // ランダム取得用関数（取り出して削除）
