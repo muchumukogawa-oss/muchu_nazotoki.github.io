@@ -29,7 +29,8 @@ const teacherProblems = [
   { img: 'img/teacher_05.png', answer: ['コンポーネント', 'こんぽーねんと'] },
   { img: 'img/teacher_06.png', answer: ['OOH'] },
   { img: 'img/teacher_07.png', answer: ['クラスター'] },
-  { img: 'img/teacher_08.png', answer: ['こうぞうか', '構造化', 'KOUZOUKA'] }
+  { img: 'img/teacher_08.png', answer: ['こうぞうか', '構造化', 'KOUZOUKA'] },
+  { img: 'img/teacher_09.png', answer: ['かわいいだけじゃだめですか？', 'かわいいだけじゃだめですか'] }
 ];
 
 // ランダム取得用関数（取り出して削除）
