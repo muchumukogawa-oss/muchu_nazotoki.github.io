@@ -15,7 +15,7 @@ const hardProblems = [
   { img: 'img/hard_06.png', answer: ['make', 'MAKE'] },
   { img: 'img/hard_07.png', answer: ['とるそー', 'トルソー'] },
   { img: 'img/hard_08.png', answer: ['店'] },
-  { img: 'img/hard_09.png', answer: ['はーと', 'ハート'] }, //差し替え予定
+  { img: 'img/hard_09.png', answer: ['巳'] },
   { img: 'img/hard_10.png', answer: ['文化祭'] },
   { img: 'img/hard_11.png', answer: ['D'] },
   { img: 'img/hard_12.png', answer: ['月'] }
