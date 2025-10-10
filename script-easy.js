@@ -93,12 +93,14 @@ answerBtn.addEventListener('click', () => {
 // ===============================
 // ブラウザバック禁止
 // ===============================
-// 履歴を1つ追加して戻れないようにする
-history.pushState(null, null, location.href);
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    history.pushState(null, null, location.href);
+    history.pushState(null, null, location.href);
 
-// ブラウザの戻るボタン検知
-window.addEventListener('popstate', function (e) {
-  alert('ブラウザの戻るボタンは使用できません。');
-  // 履歴を再度追加して戻れないようにする
-  history.pushState(null, null, location.href);
+    window.addEventListener('popstate', () => {
+      alert('ブラウザの戻るボタンは使用できません。');
+      history.pushState(null, null, location.href);
+    });
+  }, 200);
 });
