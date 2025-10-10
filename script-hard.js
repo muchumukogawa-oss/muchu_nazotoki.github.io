@@ -26,7 +26,7 @@ const teacherProblems = [
   { img: 'img/teacher_02.png', answer: ['4', 'フォー'] },
   { img: 'img/teacher_03.png', answer: ['卓球'] },
   { img: 'img/teacher_04.png', answer: ['1023'] },
-  { img: 'img/teacher_05.png', answer: ['こんぽーねんと'] },
+  { img: 'img/teacher_05.png', answer: ['コンポーネント'] },
   { img: 'img/teacher_06.png', answer: ['サイネージ', 'さいねーじ'] },
   { img: 'img/teacher_07.png', answer: ['クラスター'] },
   { img: 'img/teacher_08.png', answer: ['こうぞうか', '構造化', 'KOUZOUKA'] },
