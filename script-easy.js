@@ -88,3 +88,16 @@ answerBtn.addEventListener('click', () => {
     }, 1000);
   }
 });
+
+// ===============================
+// ブラウザバック禁止
+// ===============================
+// 履歴を1つ追加して戻れないようにする
+history.pushState(null, null, location.href);
+
+// ブラウザの戻るボタン検知
+window.addEventListener('popstate', function (e) {
+  alert('ブラウザの戻るボタンは使用できません。');
+  // 履歴を再度追加して戻れないようにする
+  history.pushState(null, null, location.href);
+});
