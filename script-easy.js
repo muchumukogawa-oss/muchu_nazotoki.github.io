@@ -82,6 +82,7 @@ answerBtn.addEventListener('click', () => {
     // 不正解処理
     marubatuImg.src = 'img/batu.png';
     marubatuImg.style.display = 'block';
+    formInput.value = ''; // 入力値を削除
 
     setTimeout(() => {
       marubatuImg.style.display = 'none';
